@@ -1,0 +1,9 @@
+[submodule "projects/learning_logs"]
+	path = projects/learning_logs
+	url = git@github.com:BeesKnight/learning_logs.git
+[submodule "projects/task_manager"]
+	path = projects/task_manager
+	url = git@github.com:BeesKnight/task_manager.git
+[submodule "projects/blog"]
+	path = projects/blog
+	url = git@github.com:BeesKnight/blog.git
