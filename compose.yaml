@@ -116,3 +116,8 @@ volumes:
   learning_logs_data:
   task_manager_data:
   blog_data:
+
+networks:
+  default:
+    external: true
+    name: calambet_default
