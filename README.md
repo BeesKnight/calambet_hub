@@ -37,6 +37,19 @@ npm run dev
 npm run build
 ```
 
+## Production Deploy
+
+Deployment is configured from this hub repository. GitHub Actions checks all three Django submodules and then deploys the full Docker Compose stack to `/opt/calambet_hub`.
+
+Required repository secrets:
+
+- `DEPLOY_HOST`
+- `DEPLOY_USER`
+- `DEPLOY_PATH`
+- `DEPLOY_SSH_KEY`
+
+The server must contain `/opt/calambet_hub/.env.production`; use `.env.production.example` as the template.
+
 ## Django Checks
 
 ```bash
