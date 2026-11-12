@@ -4,10 +4,10 @@ Repository with a static hub and three Django projects required by the practice 
 
 ## Domains
 
-- `https://learning-logs.int.yt` - submission hub
-- `https://log.learning-logs.int.yt` - Learning Log
-- `https://tasks.learning-logs.int.yt` - Task Manager
-- `https://blog.learning-logs.int.yt` - Blog
+- `https://hub.trans-platform.com` - submission hub
+- `https://log.trans-platform.com` - Learning Log
+- `https://tasks.trans-platform.com` - Task Manager
+- `https://blog.trans-platform.com` - Blog
 
 ## Projects
 

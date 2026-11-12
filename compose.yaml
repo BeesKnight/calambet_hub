@@ -19,8 +19,8 @@ services:
     environment:
       DJANGO_SECRET_KEY: ${LEARNING_LOG_SECRET_KEY:?set LEARNING_LOG_SECRET_KEY}
       DJANGO_DEBUG: ${DJANGO_DEBUG:-False}
-      DJANGO_ALLOWED_HOSTS: ${LEARNING_LOG_ALLOWED_HOSTS:-log.learning-logs.int.yt,localhost,127.0.0.1}
-      DJANGO_CSRF_TRUSTED_ORIGINS: ${LEARNING_LOG_CSRF_TRUSTED_ORIGINS:-https://log.learning-logs.int.yt}
+      DJANGO_ALLOWED_HOSTS: ${LEARNING_LOG_ALLOWED_HOSTS:-log.trans-platform.com,localhost,127.0.0.1}
+      DJANGO_CSRF_TRUSTED_ORIGINS: ${LEARNING_LOG_CSRF_TRUSTED_ORIGINS:-https://log.trans-platform.com}
       SQLITE_PATH: /app/data/db.sqlite3
     command:
       - sh
@@ -53,8 +53,8 @@ services:
     environment:
       DJANGO_SECRET_KEY: ${TASK_MANAGER_SECRET_KEY:?set TASK_MANAGER_SECRET_KEY}
       DJANGO_DEBUG: ${DJANGO_DEBUG:-False}
-      DJANGO_ALLOWED_HOSTS: ${TASK_MANAGER_ALLOWED_HOSTS:-tasks.learning-logs.int.yt,localhost,127.0.0.1}
-      DJANGO_CSRF_TRUSTED_ORIGINS: ${TASK_MANAGER_CSRF_TRUSTED_ORIGINS:-https://tasks.learning-logs.int.yt}
+      DJANGO_ALLOWED_HOSTS: ${TASK_MANAGER_ALLOWED_HOSTS:-tasks.trans-platform.com,localhost,127.0.0.1}
+      DJANGO_CSRF_TRUSTED_ORIGINS: ${TASK_MANAGER_CSRF_TRUSTED_ORIGINS:-https://tasks.trans-platform.com}
       SQLITE_PATH: /app/data/db.sqlite3
     command:
       - sh
@@ -87,8 +87,8 @@ services:
     environment:
       DJANGO_SECRET_KEY: ${BLOG_SECRET_KEY:?set BLOG_SECRET_KEY}
       DJANGO_DEBUG: ${DJANGO_DEBUG:-False}
-      DJANGO_ALLOWED_HOSTS: ${BLOG_ALLOWED_HOSTS:-blog.learning-logs.int.yt,localhost,127.0.0.1}
-      DJANGO_CSRF_TRUSTED_ORIGINS: ${BLOG_CSRF_TRUSTED_ORIGINS:-https://blog.learning-logs.int.yt}
+      DJANGO_ALLOWED_HOSTS: ${BLOG_ALLOWED_HOSTS:-blog.trans-platform.com,localhost,127.0.0.1}
+      DJANGO_CSRF_TRUSTED_ORIGINS: ${BLOG_CSRF_TRUSTED_ORIGINS:-https://blog.trans-platform.com}
       SQLITE_PATH: /app/data/db.sqlite3
     command:
       - sh
@@ -120,4 +120,4 @@ volumes:
 networks:
   default:
     external: true
-    name: calambet_default
+    name: ${PROXY_NETWORK:-calambet_default}

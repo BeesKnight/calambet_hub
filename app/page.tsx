@@ -14,10 +14,10 @@ const projects = [
     title: 'Learning Log',
     description:
       'Журнал изучаемых тем с регистрацией, личными темами и записями.',
-    domain: 'log.learning-logs.int.yt',
+    domain: 'log.trans-platform.com',
     repo: 'github.com/BeesKnight/learning_logs',
     repoUrl: 'https://github.com/BeesKnight/learning_logs',
-    status: 'Готовится к деплою',
+    status: 'Развёрнуто',
     icon: BookOpenText,
     accent: 'text-teal-700',
   },
@@ -25,10 +25,10 @@ const projects = [
     title: 'Task Manager',
     description:
       'Система задач с дедлайнами, приоритетами, владельцами и тестами доступа.',
-    domain: 'tasks.learning-logs.int.yt',
+    domain: 'tasks.trans-platform.com',
     repo: 'github.com/BeesKnight/task_manager',
     repoUrl: 'https://github.com/BeesKnight/task_manager',
-    status: 'Готовится к деплою',
+    status: 'Развёрнуто',
     icon: ClipboardList,
     accent: 'text-indigo-700',
   },
@@ -36,10 +36,10 @@ const projects = [
     title: 'Blog',
     description:
       'Публичный блог, где авторизованные пользователи управляют своими публикациями.',
-    domain: 'blog.learning-logs.int.yt',
+    domain: 'blog.trans-platform.com',
     repo: 'github.com/BeesKnight/blog',
     repoUrl: 'https://github.com/BeesKnight/blog',
-    status: 'Готовится к деплою',
+    status: 'Развёрнуто',
     icon: Newspaper,
     accent: 'text-rose-700',
   },
@@ -66,7 +66,7 @@ export default function Home() {
               <span className="grid size-9 place-items-center rounded-md bg-foreground text-background">
                 <Server className="size-4" aria-hidden="true" />
               </span>
-              learning-logs.int.yt
+              hub.trans-platform.com
             </a>
             <a
               className="inline-flex min-h-10 items-center gap-2 rounded-md border border-border bg-card px-3 text-sm font-medium shadow-sm transition hover:bg-accent"
